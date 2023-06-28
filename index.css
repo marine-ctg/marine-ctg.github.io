@@ -6,6 +6,7 @@
     font-family: "font-bold";
     src: url(./fonts/PlayfairDisplay-ExtraBold.ttf);
 }
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap');
 
 a, a:visited {
     cursor: pointer;
@@ -69,7 +70,7 @@ html {
 }
 
 body {
-    font-family: "font-reg", serif;
+    font-family: 'Inter', sans-serif;
     
 }
 .hero img {
@@ -96,7 +97,7 @@ h1 {
 
 }
 h2 {
-    font-family: "font-bold", serif;
+    font-family: 'Inter', sans-serif;
     font-size: calc(1rem + 2vw);
 
     width: 100%;
@@ -133,7 +134,7 @@ li {
     height: 200px;
 }
 p {
-    font-family: "font-reg", serif ;
+    font-family: 'Inter', sans-serif;
     font-size: calc(1rem + 1vw);
     display: flex;
     flex-direction: column;
@@ -142,7 +143,7 @@ p {
     text-align: center;
 }
 .links {
-    font-family: "font-bold", serif;
+    font-family: 'Inter', sans-serif;
     text-align: center;
     position: relative;
     top: 200px;
