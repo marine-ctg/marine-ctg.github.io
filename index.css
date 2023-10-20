@@ -36,7 +36,7 @@ a:hover:after {
 
  .hero img{
     position: relative;
-    height: 150px;
+    height: 100px;
     width: 100%;
 }
 
@@ -54,11 +54,13 @@ a:hover:after {
 .content img {
     max-width: 100px; /* Ajustez la taille du logo */
     height: auto;
+    margin-top: 80px;
 } 
 
 
 html {
-
+    font-size: 10px;
+margin: 70px;
     scroll-behavior: smooth;
 }
 
@@ -74,7 +76,7 @@ body {
 
 
 .container {
-
+margin-top: -200px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -98,40 +100,33 @@ body {
 }
 
 .container2 {
-
+    margin-top: -100px;
+/* width: 50%; */
     display: flex;
     align-items: center;
 }
 
 .column {
-
     flex: 1;
     text-align: center;
 }
 
 .text-column2 {
-
     background-color: #f0f0f0;
 }
 
 .video-column2 {
     background-color: #e0e0e0;
+    
+
 }
+
 
 video {
-    max-width: 90%; /* Reduire la largeur de la vidéo */
+    max-width: 90%; 
     height: auto;
 }
-/* .hero img {
-    height: -200px;
-    width: 100%;
-    margin: auto;
-    display: flex;
-    position: fixed;
-    font-size: calc(1rem + 1vw);
 
-    top: -100px;
-} */
 *:hover{
     -webkit-transition: all 1s ease;
     transition: all 1s ease;
@@ -161,6 +156,7 @@ h2 {
     left: 0;
 }
 .image-container {
+    margin-top: -100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
