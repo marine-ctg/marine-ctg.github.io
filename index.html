@@ -1,151 +1,429 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marine</title>
-
-    
-    <link rel="shortcut icon" href="logo.png" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="index.css" />
-    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Marine Cathala-Gil — Stratégie & Transformation Digitale</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Outfit:wght@200;300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="icon" href="./flavicon.png" type="image/png">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
-    <header>
-        
-        <div class="content">
-                <img src="logo.png" alt="logo">
-            
-        </div>
-        <div class="hero">
-            <img src="bg.jpeg" alt="Ma Photo">
-            
-        </div>
-        
-    </header>
-    
-    
-    <div class="lettre de motivation">
-        <section>
-            <h2 class="title-bjr">Bonjour</h2> 
-           
-        </section>
-        <section>
 
-<p>En quête d'une opportunité passionnante dans le Web Design, je suis actuellement à la recherche de l'entreprise qui me permettra de grandir et d'apprendre. Si vous êtes à la recherche d'un candidat motivé, créatif et déterminé, je vous invite à me contacter. Ensemble, nous pouvons construire un avenir prometteur. N'hésitez pas à m'écrire, je serais ravie de discuter de nos futures collaborations.</p>
-<br>
-<p>Vous êtes invités à plonger dans l'univers de la création numérique ! Explorez mes réalisations en SwiftUI, où l'innovation se mêle à la simplicité, ou découvrez mes projets sur WordPress, où la créativité rencontre la fonctionnalité. Que vous soyez passionnés de développement ou amateurs de belles conceptions, venez explorer un monde de possibilités numériques. Vos commentaires et réactions sont les bienvenus, car ensemble, nous pouvons faire la différence.</p>
-            
-        </section>
-        <br>
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- ══ NAV ══ -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">MCG</a>
+      <button class="nav-burger" id="burger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">Profil</a></li>
+        <li><a href="#skills">Compétences</a></li>
+        <li><a href="#projects">Projets</a></li>
+        <li><a href="#photoshop">Créations</a></li>
+        <li><a href="#experience">Parcours</a></li>
+        <li><a href="#contact" class="nav-cta">Contact</a></li>
+      </ul>
     </div>
-    <div class="separator"></div>
+  </nav>
 
-    <br>
-    <br>
-    <h2 class="title-projets">Mes projets</h2>
-    <div class="container">
-        <div class="column text-column">
-            <p>
-                "Mon P'tit Panier" : Ce projet WordPress est une véritable déclaration d'amour aux producteurs locaux. J'ai créé un site web dédié à mettre en lumière les produits de nos agriculteurs et artisans locaux. La vidéo de ce site présente l'essence de ce projet, mettant en avant la passion de ces producteurs tout en promouvant la consommation responsable et la durabilité.
-            </p>
+  <!-- ══ HERO ══ -->
+  <section id="hero" style="padding:0;border-bottom:1px solid var(--border);">
+    <div class="hero-blob"></div>
+    <div class="hero-left">
+      <div class="hero-eyebrow">
+        <div class="hero-dot"></div>
+        Disponible · Chef de Projet Digital
+      </div>
+      <h1 class="hero-h1">Marine<em>Cathala-Gil</em></h1>
+      <div class="hero-subtitle-wrap">
+        <div class="hero-subtitle-line">
+          <div class="dot"></div>
+          <span>Master Expert · Stratégie &amp; Transformation Digitale</span>
         </div>
-        <div class="column video-column">
-                <video loop="loop" autoplay="autoplay" playsinline muted>
-                <source src="video-output-5f874c05-8d71-4d53-85ef-d4e4087f55dc_88BlJTV6.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
+        <div class="hero-subtitle-line">
+          <div class="dot"></div>
+          <span>Design UI/UX · WordPress · Création de contenus</span>
         </div>
-    </div>
-    <div class="container2">
-        <div class="column video-column2">
-            <video loop="loop" autoplay="autoplay" playsinline muted>
-            <source src="troc_OISNDJid.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-    </div>
-        <div class="column text-column2">
-            <p>
-                "Troc" : C'est une application mobile que j'ai développée en utilisant SwiftUI. 
-                "Troc" encourage l'échange et le partage au sein de la communauté. 
-                Les utilisateurs peuvent facilement proposer et trouver des articles à échanger. 
-                L'application est un exemple de ma volonté d'innover, d'apporter des solutions créatives, 
-                et d'exploiter les nouvelles technologies pour résoudre des problèmes.</p>
+        <div class="hero-subtitle-line">
+          <div class="dot"></div>
+          <span>10 ans de relation client haut de gamme</span>
         </div>
+      </div>
+      <div class="hero-btns">
+        <a href="#projects" class="btn btn-primary">Voir mes projets →</a>
+        <a href="#contact" class="btn btn-ghost">Me contacter</a>
+      </div>
+      <div class="hero-stats">
+        <div class="h-stat">
+          <div class="h-stat-num">10+</div>
+          <div class="h-stat-lbl">ans relation client</div>
+        </div>
+        <div class="h-stat">
+          <div class="h-stat-num">30</div>
+          <div class="h-stat-lbl">Clients</div>
+        </div>
+        <div class="h-stat">
+          <div class="h-stat-num">≃4k</div>
+          <div class="h-stat-lbl">Heures de vol</div>
+        </div>
+      </div>
     </div>
-    <br>
-    <br>
-    <section><p>La quête de l'entreprise idéale pour une alternance a été ponctuée de défis stimulants. 
-        Mon ambition de croître en tant que web designer, 
-        de m'investir dans des projets innovants, et de contribuer de manière proactive à l'image 
-        et à la promotion d'une entreprise, a guidé ce processus.
+  </section>
 
-        Je suis impatiente de découvrir une entreprise partageant ces aspirations, où la créativité et 
-        l'initiative sont valorisées. Je recherche une opportunité qui me permettra non seulement de mettre 
-        en œuvre mes compétences actuelles, mais surtout de me développer en tant que professionnel. 
-        En quête d'un environnement propice à l'épanouissement, je suis déterminée à apporter une 
-        contribution significative tout en cultivant mes talents dans une atmosphère qui encourage 
-        l'innovation et la croissance professionnelle.
-<br>
-        <p>Ce site reflète une vitrine de mes réalisations passées, de mes projets actuels, 
-            ainsi que de mes aspirations pour l'avenir. J'espère que des initiatives telles que 
-            "Mon P'tit Panier" et "Troc" témoignent de ma passion pour la technologie, de mon engagement 
-            envers l'innovation, et de ma détermination à exceller dans le domaine du marketing.
-
-            Tout au long de ces projets, j'ai été impliquée dans la rédaction de cahiers des charges 
-            complets, englobant la qualification des besoins clients, l'identification des cibles, 
-            l'analyse des problématiques, et la définition de plans d'action stratégiques. 
-            Mon expertise s'est également étendue à la création de wireframes à l'aide de Balsamiq, 
-            de maquettes avec Figma, ainsi que de visuels percutants grâce à Canva. 
-            La gestion de ces projets a bénéficié de l'utilisation d'autres outils spécialisés, 
-            démontrant ainsi ma polyvalence dans la conduite et la coordination de projets.</p>
-        </p></section>
-        <div class="separator"></div>
-        <br>
-        <br>
-<h2 class="title-cv">Mon curriculum vitae</h2>
-
-    <div class="skills">
-        <h2>Compétences</h2>
+  <!-- ══ MARQUEE ══ -->
+  <div class="marquee-wrap">
+    <div class="marquee-track">
+      <div class="marquee-item">WordPress<span class="sep">✦</span></div>
+      <div class="marquee-item">Figma<span class="sep">✦</span></div>
+      <div class="marquee-item">SEO On-page<span class="sep">✦</span></div>
+      <div class="marquee-item">Adobe Suite<span class="sep">✦</span></div>
+      <div class="marquee-item">UI / UX Design<span class="sep">✦</span></div>
+      <div class="marquee-item">Gestion de projet<span class="sep">✦</span></div>
+      <div class="marquee-item">Community Management<span class="sep">✦</span></div>
+      <div class="marquee-item">Swift UI<span class="sep">✦</span></div>
+      <div class="marquee-item">Stratégie digitale<span class="sep">✦</span></div>
+      <div class="marquee-item">Copywriting<span class="sep">✦</span></div>
+      <!-- Duplicate for infinite loop -->
+      <div class="marquee-item">WordPress<span class="sep">✦</span></div>
+      <div class="marquee-item">Figma<span class="sep">✦</span></div>
+      <div class="marquee-item">SEO On-page<span class="sep">✦</span></div>
+      <div class="marquee-item">Adobe Suite<span class="sep">✦</span></div>
+      <div class="marquee-item">UI / UX Design<span class="sep">✦</span></div>
+      <div class="marquee-item">Gestion de projet<span class="sep">✦</span></div>
+      <div class="marquee-item">Community Management<span class="sep">✦</span></div>
+      <div class="marquee-item">Swift UI<span class="sep">✦</span></div>
+      <div class="marquee-item">Stratégie digitale<span class="sep">✦</span></div>
+      <div class="marquee-item">Copywriting<span class="sep">✦</span></div>
     </div>
-    <div class="container-cv">
-        <img src="./1bis.jpg" alt="slide1" class="image-container">
-        <img src="./page3.png" alt="slide2" class="image-container">
+  </div>
 
+  <!-- ══ ABOUT ══ -->
+  <section id="about">
+    <div class="wrap" style="position:relative;">
+      <div class="section-number">01</div>
+      <div class="s-head">
+        <div class="s-label">Profil</div>
+        <h2 class="s-title">Une reconversion <em>assumée</em> et réussie</h2>
+      </div>
+      <div class="about-layout">
+        <div class="about-text reveal-left">
+          <p>Après plus d'une décennie à exceller dans la relation client — de l'aviation commerciale (<strong>Corsair International</strong>) au retail spécialisé — j'ai choisi de réorienter mon expertise vers ce qui me passionne : <strong>le digital et le design</strong>.</p>
+          <p>Aujourd'hui en Master Expert en Stratégie et Transformation Digitale, je combine une vraie <strong>sensibilité créative</strong> (Suite Adobe, Figma, Canva) avec des compétences concrètes en webmastering WordPress, SEO on-page et gestion de projet.</p>
+          <p>Ce qui me distingue ? La capacité à faire le pont entre <strong>l'humain et le digital</strong> : comprendre les besoins, les traduire en solutions visuelles et fonctionnelles.</p>
+          <a href="mailto:cathala_gil.marine@gmail.com" class="btn btn-ghost" style="margin-top:24px;">Prendre contact →</a>
+        </div>
+        <div class="about-values reveal">
+          <div class="vcard"><div class="vnum">01</div><div class="vtitle">Créativité</div><div class="vdesc">Suite Adobe, Figma, Canva — pixel perfect, sens du détail, 2 ans de pratique intensive des outils design.</div></div>
+          <div class="vcard"><div class="vnum">02</div><div class="vtitle">Relation client</div><div class="vdesc">10+ ans d'expérience BtoB / BtoC dans des environnements exigeants à haut niveau de service.</div></div>
+          <div class="vcard"><div class="vnum">03</div><div class="vtitle">Stratégie web</div><div class="vdesc">SEO on-page, WordPress avancé (ACF, CPT, Elementor, DIVI), HTML/CSS/PHP/JS.</div></div>
+          <div class="vcard"><div class="vnum">04</div><div class="vtitle">Adaptabilité</div><div class="vdesc">Reconversion réussie, apprentissage rapide, à l'aise dans des environnements variés.</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <!-- ══ SKILLS ══ -->
+  <section id="skills">
+    <div class="wrap" style="position:relative;">
+      <div class="section-number">02</div>
+      <div class="s-head">
+        <div class="s-label">Compétences</div>
+        <h2 class="s-title">Un profil <em>polyvalent</em></h2>
+      </div>
+      <div class="skills-grid reveal">
+        <div class="sk-card"><div class="sk-icon">✦</div><div class="sk-title">Design &amp; Graphisme</div><div class="sk-tags"><span class="tag">Illustrator</span><span class="tag">Photoshop</span><span class="tag">InDesign</span><span class="tag">Premiere Rush</span><span class="tag">Canva</span><span class="tag">Figma</span><span class="tag">Balsamiq</span></div></div>
+        <div class="sk-card"><div class="sk-icon">◈</div><div class="sk-title">Développement web</div><div class="sk-tags"><span class="tag">WordPress</span><span class="tag">Elementor</span><span class="tag">DIVI</span><span class="tag">ACF / CPT</span><span class="tag">HTML / CSS</span><span class="tag">PHP / JS</span><span class="tag">Swift UI</span></div></div>
+        <div class="sk-card"><div class="sk-icon">◉</div><div class="sk-title">SEO &amp; Référencement</div><div class="sk-tags"><span class="tag">SemRush</span><span class="tag">AnswerThePublic</span><span class="tag">UberSuggest</span><span class="tag">GTMetrix</span><span class="tag">EcoIndex</span></div></div>
+        <div class="sk-card"><div class="sk-icon">⬡</div><div class="sk-title">Relation &amp; Gestion client</div><div class="sk-tags"><span class="tag">~50 clients</span><span class="tag">CRM</span><span class="tag">BtoB / BtoC</span><span class="tag">Fidélisation</span><span class="tag">Gestion litiges</span></div></div>
+        <div class="sk-card"><div class="sk-icon">⊞</div><div class="sk-title">Gestion de projet</div><div class="sk-tags"><span class="tag">Notion</span><span class="tag">Trello</span><span class="tag">Slack</span><span class="tag">Discord</span><span class="tag">Cahier des charges</span><span class="tag">SWOT / SMART</span></div></div>
+        <div class="sk-card"><div class="sk-icon">◎</div><div class="sk-title">Social Media &amp; Contenu</div><div class="sk-tags"><span class="tag">Facebook</span><span class="tag">Instagram</span><span class="tag">LinkedIn</span><span class="tag">Community Management</span><span class="tag">Cal. éditorial</span></div></div>
+      </div>
+    </div>
+  </section>
 
-        <img src="./page4.png" alt="slide3" class="image-container">
-        <img src="./page5.png" alt="slide4" class="image-container">
+  <!-- ══ PROJECTS ══ -->
+  <section id="projects">
+    <div class="wrap" style="position:relative;">
+      <div class="section-number">03</div>
+      <div class="s-head">
+        <div class="s-label">Projets</div>
+        <h2 class="s-title">Ce que j'ai <em>réalisé</em></h2>
+      </div>
 
+      <!-- BRM featured -->
+      <div class="pf-featured reveal">
+        <div class="pf-featured-accent"></div>
+        <div class="pf-head">
+          <div>
+            <div class="pf-badges"><span class="badge-s">Projet diplôme · CDUI 2024</span><span class="badge-o">Dossier complet</span></div>
+            <div class="pf-title">ConceptAuto <em>à Jacou</em></div>
+            <p class="pf-sub">Conception et réalisation complète du site web d'un négociant automobile à Jacou — du brief stratégique jusqu'à la mise en ligne, avec l'intégralité de la démarche UX/UI.</p>
+          </div>
+          <a href="https://mconceptauto.fr/" target="_blank" class="pf-link-btn">Voir le site →</a>
+        </div>
+        <div class="pf-delivs">
+          <div class="pf-col">
+            <div class="pf-col-title">Stratégie &amp; Analyse</div>
+            <div class="pf-items">
+              <div class="pf-item"><div class="pf-dot"></div><div><div class="pf-iname">Analyse Marketing</div><div class="pf-idesc">SWOT, étude concurrentielle, positionnement</div></div></div>
+              <div class="pf-item"><div class="pf-dot"></div><div><div class="pf-iname">Objectifs SMART</div><div class="pf-idesc">KPIs et objectifs mesurables</div></div></div>
+              <div class="pf-item"><div class="pf-dot"></div><div><div class="pf-iname">Personas &amp; Mapping</div><div class="pf-idesc">Parcours utilisateurs cartographiés</div></div></div>
+              <div class="pf-item"><div class="pf-dot"></div><div><div class="pf-iname">Calendrier éditorial</div><div class="pf-idesc">Contenus + stratégie newsletter</div></div></div>
+            </div>
+          </div>
+          <div class="pf-col">
+            <div class="pf-col-title">Design &amp; Créatif</div>
+            <div class="pf-items">
+              <div class="pf-item"><div class="pf-dot"></div><div><div class="pf-iname">Moodboard &amp; Charte graphique</div><div class="pf-idesc">Logo, typographies, palette couleurs</div></div></div>
+              <div class="pf-item"><div class="pf-dot"></div><div><div class="pf-iname">Storyboard &amp; Vidéo</div><div class="pf-idesc">Conception et montage vidéo</div></div></div>
+              <div class="pf-item"><div class="pf-dot"></div><div><div class="pf-iname">Wireframes Balsamiq</div><div class="pf-idesc">Arborescence et zoning des pages</div></div></div>
+              <div class="pf-item"><div class="pf-dot"></div><div><div class="pf-iname">Maquettes Figma</div><div class="pf-idesc">Prototypage interactif desktop &amp; mobile</div></div></div>
+            </div>
+          </div>
+          <div class="pf-col">
+            <div class="pf-col-title">Développement &amp; Mise en ligne</div>
+            <div class="pf-items">
+              <div class="pf-item"><div class="pf-dot"></div><div><div class="pf-iname">Intégration WordPress</div><div class="pf-idesc">Elementor / DIVI, ACF, snippets HTML/CSS/PHP/JS</div></div></div>
+              <div class="pf-item"><div class="pf-dot"></div><div><div class="pf-iname">Optimisation SEO</div><div class="pf-idesc">Référencement on-page, performances</div></div></div>
+              <div class="pf-item"><div class="pf-dot"></div><div><div class="pf-iname">Rédaction contenus</div><div class="pf-idesc">Copywriting orienté SEO — toutes pages</div></div></div>
+              <div class="pf-item"><div class="pf-dot"></div><div><div class="pf-iname">Mise en ligne &amp; recette</div><div class="pf-idesc">Tests, corrections, livraison finale</div></div></div>
+            </div>
+          </div>
+        </div>
+        <div class="pf-bottom">
+          <div class="pf-preview">
+            <div class="brow">
+              <a href="https://mconceptauto.fr/"><img src="./screencapture-mconceptauto-fr-2026-03-12-15_05_10 1.png" alt="site"></a>
+            </div>
+            <p class="pf-caption">↑ Remplacez par un screenshot : <code>&lt;img src="brm-screen.jpg"&gt;</code></p>
+          </div>
+          <div class="pf-stack">
+            <div class="pf-stack-title">Stack technique</div>
+            <div class="pf-rows">
+              <div class="pf-row"><span class="pf-rlbl">CMS</span><div class="pf-rtags"><span class="tag">WordPress</span><span class="tag">DIVI</span></div></div>
+              <div class="pf-row"><span class="pf-rlbl">Code</span><div class="pf-rtags"><span class="tag">SNIPPETS</span><span class="tag">HTML/CSS</span><span class="tag">PHP/JS</span><span class="tag">ACF/CPT</span></div></div>
+              <div class="pf-row"><span class="pf-rlbl">Design</span><div class="pf-rtags"><span class="tag">Figma</span><span class="tag">Balsamiq</span><span class="tag">Illustrator</span></div></div>
+              <div class="pf-row"><span class="pf-rlbl">SEO</span><div class="pf-rtags"><span class="tag">SemRush</span><span class="tag">GTMetrix</span><span class="tag">EcoIndex</span></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
 
+      <!-- Other projects -->
+      <div class="proj-list reveal">
+        <div class="proj-row">
+          <div class="proj-idx">02</div>
+          <div><div class="proj-name">Refonte <em>BRM Métallerie</em></div><div class="proj-desc">Refonte complète d'une entreprise de métallerie à Narbonne'. Charte graphique, WordPress ACF/CPT, fiches véhicules, SEO on-page, rédaction — de la maquette Figma à la mise en ligne.</div></div>
+          <div class="proj-tags"><span class="tag">WordPress · ACF</span><span class="tag">Figma · SEO</span></div>
+          <a href="" target="_blank" class="proj-action">En cours de mise en ligne</a>
+        </div>
+        <div class="proj-row">
+          <div class="proj-idx">03</div>
+          <div><div class="proj-name">Application mobile <em>"Troc"</em></div><div class="proj-desc">App Swift/SwiftUI d'échange de services entre producteurs locaux et consommateurs. Prototype complet avec UI, cartographie interactive et messagerie intégrée.</div></div>
+          <div class="proj-tags"><span class="tag">Swift / SwiftUI</span><span class="tag">Figma · UI Design</span></div>
+          <span class="proj-action dim">Prototype</span>
+        </div>
+        <div class="proj-row">
+          <div class="proj-idx">04</div>
+          <div><div class="proj-name">E-commerce <em>"Mon P'tit Panier"</em></div><div class="proj-desc">Plateforme WordPress WooCommerce dédiée aux producteurs locaux. Cahier des charges complet, design, développement et rédaction de tous les contenus.</div></div>
+          <div class="proj-tags"><span class="tag">WordPress</span><span class="tag">WooCommerce · SEO</span></div>
+          <span class="proj-action dim">Projet école</span>
+        </div>
+      </div>
+    </div>
+  </section>
 
-        <img src="./page6.png" alt="slide5" class="image-container">
+  <!-- ══ PHOTOSHOP ══ -->
+  <section id="photoshop">
+    <div class="wrap" style="position:relative;">
+      <div class="section-number">04</div>
+      <div class="s-head">
+        <div class="s-label">Adobe Photoshop</div>
+        <h2 class="s-title">Créations <em>graphiques</em></h2>
+        <p class="ps-desc">Montages en double exposition, fusion portrait/paysage — pratique de Photoshop appliquée à la manipulation créative d'images.</p>
+      </div>
+      <div class="ps-gallery reveal">
+        <div class="ps-card">
+          <span class="ps-num">01</span>
+          <img src="cubain.jpg" alt="Double exposition — Portrait cubain et palmiers" loading="lazy" />
+          <div class="ps-overlay">
+            <div class="ps-lbl">Portrait cubain<br>Double exposition</div>
+            <div class="ps-sub">Photoshop · Blend mode</div>
+          </div>
+        </div>
+        <div class="ps-card">
+          <span class="ps-num">02</span>
+          <img src="homme_city.jpg" alt="Double exposition — Portrait et skyline urbain" loading="lazy" />
+          <div class="ps-overlay">
+            <div class="ps-lbl">Homme &amp; skyline<br>Double exposition</div>
+            <div class="ps-sub">Photoshop · Masque de fusion</div>
+          </div>
+        </div>
+        <div class="ps-card">
+          <span class="ps-num">03</span>
+          <img src="lionne_rousse.jpg" alt="Fusion portrait femme et lionne" loading="lazy" />
+          <div class="ps-overlay">
+            <div class="ps-lbl">La lionne rousse<br>Fusion portrait &amp; animal</div>
+            <div class="ps-sub">Photoshop · Composite</div>
+          </div>
+        </div>
+        <div class="ps-card">
+          <span class="ps-num">04</span>
+          <img src="test-dame-creole.jpg" alt="Double exposition — Dame créole et palmiers" loading="lazy" />
+          <div class="ps-overlay">
+            <div class="ps-lbl">Dame créole<br>Double exposition</div>
+            <div class="ps-sub">Photoshop · Blend mode</div>
+          </div>
+        </div>
+      </div>
+      <p class="ps-note">Techniques : double exposition, masques de fusion, blend modes, composite portrait/paysage</p>
+    </div>
+  </section>
 
-</div>
-   <br>
-   <br>
-   <br> 
-   <br>
+  <!-- ══ EXPERIENCE ══ -->
+  <section id="experience">
+    <div class="wrap" style="position:relative;">
+      <div class="section-number">05</div>
+      <div class="s-head">
+        <div class="s-label">Parcours</div>
+        <h2 class="s-title">Mon <em>histoire</em></h2>
+      </div>
+      <div class="xp-grid">
+        <div class="reveal">
+          <div class="xp-col-head">Expériences</div>
+          <div class="tl">
+            <div class="tl-item"><div class="tl-spine"><div class="tl-dot g"></div><div class="tl-line"></div></div><div><div class="tl-date">2024 / 2025 · Alternance</div><div class="tl-title">Master Chef de Projet</div><div class="tl-co">Attrap'Temps – Agence de communication · Narbonne / Perpignan</div><div class="tl-desc">Gestion d'un portefeuille d'une cinquantaine de clients. Rédaction cahier des charges, analyse marketing, référencement SEO, refonte identité visuelle, intégration WordPress.</div></div></div>
+            <div class="tl-item"><div class="tl-spine"><div class="tl-dot"></div><div class="tl-line"></div></div><div><div class="tl-date">2023</div><div class="tl-title">Conceptrice vendeuse</div><div class="tl-co">EcoCuisine · Narbonne</div><div class="tl-desc">Conception cuisines sur mesure, logiciel 3D, conseil, négociation et suivi SAV.</div></div></div>
+            <div class="tl-item"><div class="tl-spine"><div class="tl-dot"></div><div class="tl-line"></div></div><div><div class="tl-date">2022</div><div class="tl-title">Promotrice de vente BtoB</div><div class="tl-co">ABC Distribution · Secteur Occitanie</div><div class="tl-desc">Maîtrise des techniques de vente, présentation produits, suivi des ventes et fidélisation client.</div></div></div>
+            <div class="tl-item"><div class="tl-spine"><div class="tl-dot"></div><div class="tl-line"></div></div><div><div class="tl-date">2020 / 2022</div><div class="tl-title">Conseillère de vente</div><div class="tl-co">Entrepôt du Bricolage · Narbonne</div><div class="tl-desc">Expertise produits, conseil artisans/professionnels, gestion des réclamations et stocks.</div></div></div>
+            <div class="tl-item"><div class="tl-spine"><div class="tl-dot"></div><div class="tl-line"></div></div><div><div class="tl-date">2015 / 2020</div><div class="tl-title">Personnel Navigant Commercial</div><div class="tl-co">Corsair International · Paris – Orly</div><div class="tl-desc">Relation client à haut niveau de service, communication multilingue, gestion d'urgences.</div></div></div>
+            <div class="tl-item"><div class="tl-spine"><div class="tl-dot"></div><div class="tl-line"></div></div><div><div class="tl-date">2008 et avant</div><div class="tl-title">Opticienne · Responsable de salle</div><div class="tl-co">Optical Center · Restaurants (Malte, La Réunion, Narbonne)</div><div class="tl-desc">10 ans d'hôtellerie-restauration internationale + conseil et gestion administrative.</div></div></div>
+          </div>
+        </div>
+        <div class="reveal" style="transition-delay:.15s">
+          <div class="xp-col-head">Formations</div>
+          <div class="tl">
+            <div class="tl-item"><div class="tl-spine"><div class="tl-dot g"></div><div class="tl-line"></div></div><div><div class="tl-date">2024 — 2025 · En cours</div><div class="tl-title">Master Expert Stratégie &amp; Transformation Digitale</div><div class="tl-co">Objectif 3W · Montpellier · RNCP36905</div></div></div>
+            <div class="tl-item"><div class="tl-spine"><div class="tl-dot g"></div><div class="tl-line"></div></div><div><div class="tl-date">2024</div><div class="tl-title">Licence Concepteur Designer UI</div><div class="tl-co">Objectif 3W · Montpellier</div></div></div>
+            <div class="tl-item"><div class="tl-spine"><div class="tl-dot"></div><div class="tl-line"></div></div><div><div class="tl-date">2023</div><div class="tl-title">Certification CMS WordPress TPE/PME</div><div class="tl-co">Simplon · Montpellier</div></div></div>
+            <div class="tl-item"><div class="tl-spine"><div class="tl-dot"></div><div class="tl-line"></div></div><div><div class="tl-date">2023</div><div class="tl-title">Apple Foundation Program — iOS Swift UI</div><div class="tl-co">Simplon · Toulouse</div></div></div>
+            <div class="tl-item"><div class="tl-spine"><div class="tl-dot"></div><div class="tl-line"></div></div><div><div class="tl-date">2022</div><div class="tl-title">CEFCA – Concepteur Vendeur Cuisine</div><div class="tl-co">EcoCuisine · Metz</div></div></div>
+            <div class="tl-item"><div class="tl-spine"><div class="tl-dot"></div><div class="tl-line"></div></div><div><div class="tl-date">2019</div><div class="tl-title">CQP PNC</div><div class="tl-co">Corsair International · Orly</div></div></div>
+            <div class="tl-item"><div class="tl-spine"><div class="tl-dot"></div><div class="tl-line"></div></div><div><div class="tl-date">2009 et avant</div><div class="tl-title">BAC Pro Services · BEP Hôtellerie · BEP Sanitaire</div><div class="tl-co">Diverses écoles · Carcassonne / Lézignan</div></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<div class="links">
-    <a href="mailto:cathala.marine@yahoo.fr">Ecrivez-moi !</a>
-</div>
+  <!-- ══ CONTACT ══ -->
+  <section id="contact">
+    <div class="wrap" style="position:relative;">
+      <div class="section-number">06</div>
+      <div class="ct-grid">
+        <div class="reveal">
+          <div class="s-label">Contact</div>
+          <h2 class="s-title" style="margin-top:10px;">Travaillons<br><em>ensemble</em></h2>
+          <p class="ct-desc">Je recherche un contrat de professionnalisation pour finaliser mon Master Expert en Stratégie &amp; Transformation Digitale. Réseaux sociaux, création de contenus, webmastering, gestion de projet digital — disponible dès septembre 2026.</p>
+          <div class="ct-avail"><div class="avail-dot"></div>Disponible</div>
+        </div>
+        <div class="ct-links reveal" style="transition-delay:.15s">
+          <a href="mailto:cathala_gil.marine@gmail.com" class="ct-link"><div><span class="ct-lbl">Email</span><span class="ct-val">cathala_gil.marine@gmail.com</span></div><span class="ct-arr">→</span></a>
+          <a href="tel:0768002112" class="ct-link"><div><span class="ct-lbl">Téléphone</span><span class="ct-val">07 68 00 21 12</span></div><span class="ct-arr">→</span></a>
+          <a href="https://linkedin.com/in/mcathala-gil" target="_blank" class="ct-link"><div><span class="ct-lbl">LinkedIn</span><span class="ct-val">mcathala-gil</span></div><span class="ct-arr">→</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<table class="footer" >
-    <tr>
-        <td ><a href="https://www.linkedin.com/in/mcathala-gil"><img src="./linkedin.png" alt="" class="img-icon"></a></td>
-        <td ><a href="https://github.com/marine-ctg"><img src="./github.png" alt="" class="img-icon"></a></td>
-        <td ><a href="https://www.instagram.com/marine_ctg/"><img src="./instagram.png" alt="" class="img-icon"></a></td>
-        
-    </tr>
-</table>
-<br>
-<br>
-<br>
+  <!-- ══ FOOTER ══ -->
+  <footer>
+    <div class="wrap">
+      <div class="ft">
+        <span>© 2026 Marine Cathala-Gil</span>
+        <span class="ft-mid">Persévérante · Curieuse · Adaptable</span>
+        <span class="ft-right">Stratégie &amp; Transformation Digitale</span>
+      </div>
+    </div>
+  </footer>
 
+  <script>
+    // ══ CUSTOM CURSOR ══
+    const dot = document.getElementById('cursorDot');
+    const ring = document.getElementById('cursorRing');
+    let mx = 0, my = 0, rx = 0, ry = 0;
 
+    document.addEventListener('mousemove', e => {
+      mx = e.clientX; my = e.clientY;
+      dot.style.left = mx - 4 + 'px';
+      dot.style.top  = my - 4 + 'px';
+    });
+    (function tick() {
+      rx += (mx - rx) * .1; ry += (my - ry) * .1;
+      ring.style.left = rx - 20 + 'px';
+      ring.style.top  = ry - 20 + 'px';
+      requestAnimationFrame(tick);
+    })();
+
+    document.querySelectorAll('a, button, .ps-card, .sk-card, .vcard, .proj-row, .ct-link').forEach(el => {
+      el.addEventListener('mouseenter', () => ring.classList.add('expand'));
+      el.addEventListener('mouseleave', () => ring.classList.remove('expand'));
+    });
+
+    // ══ SCROLL REVEAL ══
+    const io = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); }
+      });
+    }, { threshold: 0.06 });
+    document.querySelectorAll('.reveal, .reveal-left').forEach(el => io.observe(el));
+
+    // ══ NAV ══
+    const nav = document.getElementById('navbar');
+    const secs = document.querySelectorAll('section[id]');
+    const navAs = document.querySelectorAll('.nav-links a');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 30);
+      let cur = '';
+      secs.forEach(s => { if (window.scrollY >= s.offsetTop - 80) cur = s.id; });
+      navAs.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + cur));
+    }, { passive: true });
+
+    // ══ BURGER ══
+    const burger = document.getElementById('burger');
+    const nl = document.getElementById('navLinks');
+    burger.addEventListener('click', () => {
+      burger.classList.toggle('open');
+      nl.classList.toggle('open');
+    });
+    nl.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+      burger.classList.remove('open');
+      nl.classList.remove('open');
+    }));
+
+    // ══ HERO IMG subtle parallax ══
+    const heroImg = document.querySelector('.hero-right-img');
+    if (heroImg) {
+      window.addEventListener('scroll', () => {
+        const y = window.scrollY;
+        heroImg.style.transform = `translateY(${y * .15}px)`;
+      }, { passive: true });
+    }
+
+    // ══ STAGGER REVEALS ══
+    document.querySelectorAll('.skills-grid .sk-card').forEach((el, i) => {
+      el.style.transitionDelay = (i * .08) + 's';
+    });
+    document.querySelectorAll('.ps-gallery .ps-card').forEach((el, i) => {
+      el.style.transitionDelay = (i * .1) + 's';
+    });
+  </script>
 </body>
 </html>
