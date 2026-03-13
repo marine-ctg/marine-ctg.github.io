@@ -98,7 +98,7 @@
     .hero-right-label { position: absolute; bottom: 40px; right: 40px; z-index: 2; text-align: right; }
     .hero-right-label span { display: block; font-size: .62rem; text-transform: uppercase; letter-spacing: .2em; color: var(--muted2); }
 
-    .hero-stats { display: flex; gap: 40px; margin-top: 48px; padding-top: 32px; border-top: 1px solid var(--border); animation: slideDown 1s .4s ease both; justify-content: center; }
+    .hero-stats { display: flex; gap: 90px; margin-top: 48px; padding-top: 32px; border-top: 1px solid var(--border); animation: slideDown 1s .4s ease both; justify-content: center; }
     .h-stat { text-align: center; }
     .h-stat-num { font-family: var(--font-serif); font-size: 4rem; font-weight: 700; color: var(--accent); line-height: 1; }
     .h-stat-lbl { font-size: 1rem; color: var(--muted); text-transform: uppercase; letter-spacing: .1em; margin-top: 4px; }
