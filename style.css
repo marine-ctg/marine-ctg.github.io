@@ -27,7 +27,7 @@
     body { background: var(--bg); color: var(--text); font-family: var(--font-sans); font-size: 14px; line-height: 1.65; -webkit-font-smoothing: antialiased; overflow-x: hidden; font-weight: 300; cursor: none; }
     img { display: block; max-width: 100%; }
     a { color: inherit; text-decoration: none; }
-    .wrap { max-width: 1440px; margin: 0 auto; padding: 0; }
+    .wrap { max-width: 1920px; width: 80%; margin: 0 auto; padding: 0; }
 
     /* ══ NOISE OVERLAY ══ */
     body::before {
