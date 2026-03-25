@@ -326,7 +326,8 @@
     @media (max-width: 1020px) {
       #hero { grid-template-columns: 1fr; }
       .hero-right { display: none; }
-      .hero-left { padding: 120px 36px 80px; }
+      .hero-subtitle-line span {font-size: 1rem;}
+      .hero-subtitle-line .dot { display: none;}
       .about-layout { grid-template-columns: 1fr; gap: 48px; }
       .skills-grid { grid-template-columns: 1fr 1fr; }
       .xp-grid, .ct-grid { grid-template-columns: 1fr; gap: 44px; }
@@ -339,11 +340,11 @@
       .proj-row { grid-template-columns: 46px 1fr; grid-template-rows: auto auto; }
       .proj-tags { display: none; }
       .proj-action { grid-column: 2; justify-self: start; margin-top: 6px; }
+      .nav-inner, .wrap { width: 90%;}
       .nav-burger { display: flex; }
       .nav-links { display: none; position: fixed; inset: 60px 0 0; background: rgba(5,5,8,.97); flex-direction: column; align-items: center; justify-content: center; gap: 14px; z-index: 499; border-top: 1px solid var(--border); }
       .nav-links.open { display: flex; }
       .nav-links a { font-size: 1.1rem; padding: 12px 28px; }
-      .wrap, .nav-inner { padding-left: 24px; padding-right: 24px; }
       .section-number { display: none; }
     }
     @media (max-width: 640px) {
