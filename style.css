@@ -328,7 +328,7 @@
       .hero-right { display: none; }
       .hero-subtitle-line span {font-size: 1rem;}
       .hero-subtitle-line .dot { display: none;}
-      .hero-left { width: 90%; padding: 0;}
+      .hero-left { width: 90%; padding: 0; margin-top: 70px; }
       .hero-eyebrow { padding: 0; }
       .about-layout { grid-template-columns: 1fr; gap: 48px; }
       .skills-grid { grid-template-columns: 1fr 1fr; }
