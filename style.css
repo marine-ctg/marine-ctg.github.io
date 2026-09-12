@@ -317,7 +317,7 @@ p {
    align-self: center;
 
    max-width: 850px;
-   bottom: 60px;
+   bottom: 110px;
 }
 
 .hero-kicker {
@@ -439,7 +439,7 @@ p {
 
    border-top: 1px solid rgba(255, 255, 255, 0.20);
    border-bottom: 1px solid rgba(255, 255, 255, 0.20);
-   bottom: 200px;
+   bottom: 180px;
 }
 
 .hero-note p {
