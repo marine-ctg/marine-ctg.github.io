@@ -1616,7 +1616,9 @@ body.image-modal-open {
       flex-wrap: wrap;
    }
 
-
+.skill-row p {
+    font-size: 18px;
+}
 
    .section-index {
       top: 18px;
