@@ -1209,18 +1209,26 @@ p {
 }
 
 .contact-available {
-   width: fit-content;
+    width: fit-content;
+    margin-top: 30px !important;
+    padding-top: 12px;
 
-   padding: 10px 14px;
+    border-top: 1px solid var(--forest);
 
-   background: var(--orange);
-   color: var(--white) !important;
+    color: var(--forest) !important;
 
-   font-family: "League Spartan", Arial, sans-serif;
-   font-size: 20px !important;
-   font-weight: 800;
-   text-transform: uppercase;
-   letter-spacing: 0.08em;
+    font-family: "League Spartan", Arial, sans-serif;
+    font-size: 16px !important;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.contact-available::before {
+    content: "✦";
+    margin-right: 9px;
+
+    color: var(--orange);
 }
 
 .contact-links {
